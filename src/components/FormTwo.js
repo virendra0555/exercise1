@@ -103,7 +103,7 @@ function FormTwo() {
           <Input type={'number'} placehoder={'ex. 100'} value={data.totalEmployees} onChange={handleTotalEmployees} />
         </FormField>
 
-        <FormField marginBottom={96}>
+        <FormField>
           <Label> Apply type  </Label>
           <div className='flex gap-[16px]'>
             <Radio name="apply_type" label={'Quick apply'} value='quick_apply' onChange={handleApplyType} />
@@ -111,7 +111,7 @@ function FormTwo() {
           </div>
         </FormField>
 
-        <footer className='flex justify-end'>
+        <footer className='flex justify-end mt-[96px]'>
           <Button type='primary'> Save </Button>
         </footer>
 

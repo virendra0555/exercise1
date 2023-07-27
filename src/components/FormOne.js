@@ -74,18 +74,18 @@ function FormOne() {
           {error.field === 'industry' && <ErrorMessage> {error.message} </ErrorMessage>}
         </FormField>
 
-        <div className='flex gap-[24px] w-full'>
-          <FormField marginBottom={96}>
+        <div className='flex gap-[24px] w-full mb-[0]'>
+          <FormField>
             <Label> Remote type  </Label>
             <Input type={'text'} placehoder={'ex. In-office '} value={data.remoteType} onChange={handleRemoteType} />
           </FormField>
-          <FormField marginBottom={96}>
+          <FormField>
             <Label> Location  </Label>
             <Input type={'text'} placehoder={'ex. Chennai '} value={data.location} onChange={handleLocation} />
           </FormField>
         </div>
 
-        <footer className='flex justify-end'>
+        <footer className='flex justify-end mt-[96px]'>
           <Button type='primary'> Next </Button>
         </footer>
 

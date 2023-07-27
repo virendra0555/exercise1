@@ -42,11 +42,8 @@ function JobCard({ job, index }) {
                <div className='mb-[8px]'> INR (₹) {salaryMin} - {salaryMax} / Month </div>
                <div className='mb-[24px]'> {totalEmployees} employees </div>
                <div className='flex '>
-                  {applyType === 'quick_apply' ? (
-                     <Button type={'primary'}> Apply Now </Button>
-                  ) : (
-                     <Button type={'outline'}> External Apply </Button>
-                  )}
+                  {applyType === 'quick_apply' && <Button type={'primary'}> Apply Now </Button> }
+                  {applyType === 'external_apply' && <Button type={'outline'}> External Apply </Button> }
                </div>
             </div>
          </div>
